@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByName</title>
+</head>
+<body>
+
+    <p name="mayusc">ESTE ES UN PARRAFO DE EJEMPLO ESCRITO EN MAYUSCULAS</p>
+    <p name="mayusc">ESTE ES OTRO PARRAFO DE EJEMPLO ESCRITO EN MAYUSCULAS</p>
+
+    <input type="button" value="contar_mayusc" onclick="contar_name()">
+
+    <script>
+        function contar_name(){
+            var mayusculas = document.getElementsByName('mayusc');
+            alert("El total de parrafos con mayusculas es: "+mayusculas.length);
+        }
+    </script>
+    
+</body>
+</html>
